@@ -1,0 +1,74 @@
+$font-google-lato: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap';
+$font-google-mont: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap';
+
+
+@if variable-exists(font-google-lato) {
+  @import url($font-google-lato);
+}
+@if variable-exists(font-google-mont) {
+  @import url($font-google-mont);
+}
+
+$family-sans-serif: "Lato", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+
+$family-sans-mont: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+
+
+$brand-1: #3c989e;
+$brand-2: #5db5a4;
+$brand-3: #eac2a5;
+$brand-4: #f57a82;
+$brand-5: #ed5276;
+$stack-prim: $family-sans-serif;
+$stack-2: $family-sans-mont;
+
+
+
+$cooper-blue: #134160;
+
+html {
+  font-size: 10px;
+}
+body, p {
+
+  font-size: 1.6rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .title {
+    font-size: 3rem;
+    font-family: $stack-2;
+    color: white;
+  }
+  #local,
+  #weather,
+  #line1 {
+    //opacity: 0;
+    transition: all 2s;
+  }
+  #local {
+    font-size: 1rem;
+  }
+  h3.city {
+    color: $brand-4;
+  }
+  .name {
+    color: $brand-5;
+  }
+  .main {
+    margin-top: 6rem;
+  }
+  
+  .panel {
+    font-size: 1.6rem;
+    padding: 60px;
+    background-color: $cooper-blue;
+    color: white;
+    border-radius: 3rem;
+  }
+
+  
