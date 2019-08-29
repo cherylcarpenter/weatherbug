@@ -4,6 +4,7 @@ Tells the weather by zipcod using https://openweathermap.org/
 
 ## Installation
  open index.html
+ or click https://cherylcarpenter.github.io/weatherbug/index.html
  or for full front end, run 'npm i' and then run gulp from terminal
 
 ## Tech stack
