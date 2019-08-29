@@ -20,7 +20,7 @@ Overall I am enjoying running my js compiling at the same time as my gulp/sass w
 ## Usage
 
 Given parameters of logo, color, and submit button.
-To implemnet in WordPress I'd like to know which parts of the banner/widget the content person nees to be editable.
+To implement in WordPress I'd like to know which parts of the banner/widget the content person nees to be editable.
 I would think the logo, headline, and verbiage should be dynamic.
 This looks like a simple custom widget, so i'd register a custom widget area with the needed fields, and hook into which ever templates we want the banner on.
 It could also be selected in a content area, I'd probably use advanced custom fields for maximum customization.
