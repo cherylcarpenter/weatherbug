@@ -28,7 +28,7 @@ function myApp() {
                 dataType: "jsonp",
                 success: function (result) {
                     var temp = result.main.temp;
-                    var iconUrl = "http://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png";
+                    var iconUrl = "https://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png";
      
                     $("#line1").html(result.weather[0].description);
                     $(".icon").attr("src", iconUrl);
