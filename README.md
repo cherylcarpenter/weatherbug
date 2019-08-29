@@ -3,8 +3,8 @@
 Tells the weather by zipcode using https://openweathermap.org/
 
 ## Installation
-download and
- open index.html
+download as zip and
+ open index.html within project folder. 
 
  or for full front end, run 'npm i' and then run gulp from terminal
 
