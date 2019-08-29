@@ -1,6 +1,6 @@
 # Weather bug
 
-Tells the weather by zipcod using https://openweathermap.org/
+Tells the weather by zipcode using https://openweathermap.org/
 
 ## Installation
  open index.html
