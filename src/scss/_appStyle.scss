@@ -86,10 +86,14 @@ body, p {
 
   .button{
     background-color: transparent;
-    border-color: white;
-    color: white;
+    border-color: #fff;
     padding: 0 4.5rem;
-   border-radius: 3rem;
+    border-radius: 3rem;
+    line-height: 2.5;
+    height: auto;
+    border-width: 2px;
+    font-size: 2rem!important;
+    color: white;
     &:hover,&:active,&:focus {
       color: white;
     }
@@ -101,4 +105,12 @@ body, p {
     text-align: center;
     margin-top: 1.5rem;
 
+  }
+  #forecast {
+    .title {
+      color: $cooper-blue;
+    }
+    #weather{
+      font-size: 3rem;
+    }
   }

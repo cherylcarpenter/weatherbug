@@ -5,7 +5,7 @@ var gulp = require("gulp"),
     cssnano = require("cssnano"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
-    webpack_stream = require('webpack-stream')
+    webpack_stream = require('webpack-stream');
     webpack_config = require("./webpack.config");
     
 var paths = {

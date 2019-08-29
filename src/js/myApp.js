@@ -1,10 +1,5 @@
 function myApp() {
-    // $("#gWrapper").show();
-
-    //getLocation();
-    $("#gWrapper").hide();
-    $("#celcbtn").hide();
-    
+    var Inputmask = require('inputmask');
 
     $("#forecast").hide();
 
@@ -12,14 +7,15 @@ function myApp() {
     maskInput();
 
    function maskInput(){
-       
-    $(document.getElementById("#submitZip")).inputmask("99999",{autoclear: false});
+    var selector = document.getElementById("submitZip");
+    var im = new Inputmask("99999");
+    im.mask(selector);
 
+    
     };
     
 
     global.getWeather = function (zip){
-        // $("#gWrapper").show();
         var key = "d74714e96875738b320436fefff33ab9"
         var url =
             "http://api.openweathermap.org/data/2.5/weather?zip="+
@@ -41,18 +37,11 @@ function myApp() {
                     $("#intro").hide();
                     $("#submitWrapper").hide();
                     $("#forecast").show();
-
-
-                    $("#gWrapper").hide();
-                    console.log(result);
+                   // console.log(result);
                 }
             });
-           
-    
-  
-
+        
     };
- 
 };
 
 
