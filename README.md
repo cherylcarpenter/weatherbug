@@ -3,8 +3,11 @@
 Tells the weather by zipcode using https://openweathermap.org/
 
 ## Installation
+view here https://cherylcarpenter.github.io/weatherbug/
+First time I"ve had GitHub run a site so that's fun.
+or
 download as zip and
- open index.html within project folder. 
+open index.html within project folder. 
 
  or for full front end, run 'npm i' and then run gulp from terminal
 
