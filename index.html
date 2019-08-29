@@ -13,55 +13,69 @@
 <body>
 
   <div class="main container">
-      <div id="gWrapper" class="column">
-          <div id="circularG">
-            <div id="circularG_1" class="circularG"></div>
-            <div id="circularG_2" class="circularG"></div>
-            <div id="circularG_3" class="circularG"></div>
-            <div id="circularG_4" class="circularG"></div>
-            <div id="circularG_5" class="circularG"></div>
-            <div id="circularG_6" class="circularG"></div>
-            <div id="circularG_7" class="circularG"></div>
-            <div id="circularG_8" class="circularG"></div>
-          </div>
-        </div>
-    <div class="columns is-centered">
-     
+    <div id="gWrapper" class="column">
+      <div id="circularG">
+        <div id="circularG_1" class="circularG"></div>
+        <div id="circularG_2" class="circularG"></div>
+        <div id="circularG_3" class="circularG"></div>
+        <div id="circularG_4" class="circularG"></div>
+        <div id="circularG_5" class="circularG"></div>
+        <div id="circularG_6" class="circularG"></div>
+        <div id="circularG_7" class="circularG"></div>
+        <div id="circularG_8" class="circularG"></div>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered">
+
 
 
       <div class="column is-10">
         <div class="panel has-text-centered">
-            <h1 class="title ">Get your local weather</h1>
-            <p class="name">By Cheryl Carpenter</h5>
-          <!-- pageloader graphic -->
-              <div class="columns">
-                  <div class="column">
+    
+            <div class="columns inside is-vcentered">
 
-          <h3>Your Location</h3>
 
-          <p id="local" class="">--</p>
-          <h3 class="city">Nearest City: <span id="local2" class="">--</span></h3>
-          <h3>Forecast</h3>
-          <div class="weather panel">
-            <div class="column">
-              <p class="" id="line1">--</p>
-            </div>
-            <div class="column">
-              <img class="icon" />
-            </div>
-            <div class="column holder">
-              <span id="weather" class="">--</span><span id="celc"> C</span>
+  
+              <div class="column is-2">
+                <img src="https://via.placeholder.com/150" />
+
+              </div>
+              <div class="column">
+                <div id="intro">
+                <h1 class="title">Welcome! </h1>
+                <h6 class="subTitle">Enter your 5-digit US zipcode for the current weather</h6>
+                <div class="column"><input id="submitZip" class="input is-medium" type="text" placeholder="Zip Code">
+                </div>
+              </div>
+
+
+                  <div id="forecast" class="weather panel">
+  
+                    <h3>Your Forecast Today</h3>
+                    <div class="column">
+                      <p class="" id="line1">--</p>
+                    </div>
+                    <div class="column">
+                      <img class="icon" />
+                    </div>
+                    <div class="column holder">
+                      <span id="weather" class="">--</span><span id="farenheight"> F</span>
+                    </div>
+                  </div>
+  
+              </div>
+           
+              <div id="submitWrapper" class="column is-2">
+            
+                  <input id="submitBtn" class="button is-large is-outlined" type="submit" value="Submit" onclick="getWeather(document.getElementById('submitZip').value)">
+
+                </div>
             </div>
           </div>
-          <br />
-          <div id="celcbtn" class="btn btn-md btn-primary">Show Celcius</div>
-          <div id="faren" class="btn btn-md btn-primary">Show Ferenheit</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>  
-</body>
 
+      </div>
+</body>
+<script>
+
+</script>
 </html>

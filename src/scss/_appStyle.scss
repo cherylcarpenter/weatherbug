@@ -64,11 +64,41 @@ body, p {
   }
   
   .panel {
+    transition: all 2s linear;
+    
+    .inside {
+      margin-top: 1.5rem;
+
+    }
     font-size: 1.6rem;
-    padding: 60px;
+    padding: 3rem;
     background-color: $cooper-blue;
     color: white;
     border-radius: 3rem;
+    
+    &.weather {
+      background-color: #eee;
+      color: $cooper-blue;
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
-  
+  .button{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding: 0 4.5rem;
+   border-radius: 3rem;
+    &:hover,&:active,&:focus {
+      color: white;
+    }
+
+  }
+  #submitZip {
+    max-width: 100px;
+    border-radius: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+
+  }

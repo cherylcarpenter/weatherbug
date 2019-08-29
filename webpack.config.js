@@ -12,7 +12,7 @@ module.exports = {
     },
   resolve : {
     alias: {
-      'jquery': 'jquery/dist/jquery',
+      'jquery': 'node_modules/jquery/dist/jquery.min.js',
       'assets': '/assets'
     }
   },
@@ -71,5 +71,6 @@ module.exports = {
         "window.jQuery": "jquery'",
         "window.$": "jquery"
     })
+    
   ]
 };

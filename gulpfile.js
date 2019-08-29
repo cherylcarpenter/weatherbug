@@ -56,34 +56,24 @@ function webpack(){
     .pipe(browserSync.stream())
 
 };
-//static files no need
-// function mySync(){
-//     browserSync.init({
-//         // You can tell browserSync to use this directory and serve it as a mini-server
-//         proxy: {
-//             target: "http://localhost:49780/",
-//             ws: true
-//         },
-//         // If you are already serving your website locally using something like apache
-//         // You can use the proxy setting to proxy that instead
-//         // proxy: "yourlocal.dev"
-//     });
-// };
 
+function mySync(){
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+};
 
-//A simple task to reload the page
-// function reload() {
-//     browserSync.reload();
-// };
 
 // Add browsersync initialization at the start of the watch task
 function watch() {
 
-    gulp.watch(paths.styles.src, style);
-    gulp.watch(paths.styles.sass, style);
-    gulp.watch(paths.styles.jsSrc, webpack);
-    // gulp.watch(paths.styles.Html);
-    gulp.watch(paths.styles.jsFinal);
+    gulp.watch(paths.styles.src, style).on('change', browserSync.reload);
+    gulp.watch(paths.styles.sass, style).on('change', browserSync.reload);
+    gulp.watch(paths.styles.jsSrc, webpack).on('change', browserSync.reload);
+    gulp.watch(paths.styles.Html).on('change', browserSync.reload);
+    gulp.watch(paths.styles.jsFinal).on('change', browserSync.reload);
 
 };
 
@@ -93,10 +83,6 @@ gulp.task('fonts', function() {
   });
 
 
-// We don't have to expose the reload function
-// It's currently only useful in other functions
-
-
 // Don't forget to expose the task!
 exports.watch = watch;
 exports.webpack = webpack;
@@ -104,14 +90,14 @@ exports.webpack = webpack;
 // This allows you to run it from the commandline using
 // $ gulp style
 exports.style = style;
-// exports.mySync = mySync;
+exports.mySync = mySync;
 
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
 
  
-var build = gulp.parallel(style, webpack, watch)
+var build = gulp.parallel(style, webpack, mySync, watch)
 /*
  * You can still use `gulp.task` to expose tasks
  */
