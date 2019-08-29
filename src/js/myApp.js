@@ -18,7 +18,7 @@ function myApp() {
     global.getWeather = function (zip){
         var key = "d74714e96875738b320436fefff33ab9"
         var url =
-            "http://api.openweathermap.org/data/2.5/weather?zip="+
+            "https://api.openweathermap.org/data/2.5/weather?zip="+
             zip+",us" +
             "&APPID=" + key +"&units=imperial";
 
