@@ -40,7 +40,7 @@
     "import-postcss": "^8.0.2",
     "include-media": "^1.4.9",
     "inputmask": "^4.0.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-ui": "^1.12.1",
     "jquery-ui-dist": "^1.12.1",
     "jquery.maskedinput": "^1.4.1",
