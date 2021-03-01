@@ -50,7 +50,7 @@
     "perfectionist": "^2.4.0",
     "postcss-sorting": "^5.0.0",
     "postcss-unprefix": "^2.1.4",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.23.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "style-loader": "^0.23.1",
